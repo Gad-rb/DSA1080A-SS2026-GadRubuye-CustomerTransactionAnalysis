@@ -103,7 +103,7 @@ DSA1080A-SS2026-GadRubuye-CustomerTransactionAnalysis/
 
 ## Methodology
 
-Statistical methods from STA1020 — including distribution analysis, IQR-based outlier detection, and probability estimation — were applied throughout this analysis to ensure findings are statistically grounded.
+Statistical methods from STA1020 including distribution analysis, IQR-based outlier detection, and probability estimation were applied throughout this analysis to ensure findings are statistically grounded.
 
 Python concepts from DSA1060 were also applied throught the project
 
