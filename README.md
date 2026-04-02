@@ -64,7 +64,12 @@ DSA1080A-SS2026-GadRubuye-CustomerTransactionAnalysis/
 │   ├── monthly_revenue_trend.png
 │   ├── customer_spending_distribution.png
 │   ├── revenue_by_country_boxplot.png
-│   └── activity_heatmap.png
+│   ├── activity_heatmap.png
+│   ├── customer_segmentation.png
+│   ├── repeat_vs_new_customers.png
+│   ├── country_revenue_share.png
+│   ├── peak_purchasing_periods.png
+│   └── frequency_vs_spend_correlation.png
 │
 ├── notebook.ipynb
 ├── report.pdf
@@ -87,27 +92,42 @@ DSA1080A-SS2026-GadRubuye-CustomerTransactionAnalysis/
 
 ## Key Findings
 
-1. **Revenue is highly seasonal** — November 2011 was the peak month at £1,156,205, with Q4 (September–November) accounting for a disproportionate share of annual revenue, driven by pre-holiday wholesale purchasing activity.
+1. **Revenue is critically concentrated in a single market** — the United Kingdom accounts for 81.97% of total revenue. The next nine markets combined contribute less than 18%, creating structural geographic risk.
 
-2. **Customer spending is strongly right-skewed** — the median customer spends £658 in total while the mean is £1,406, confirming that a small high-value segment drives a disproportionate share of revenue. The top customer alone generated £280,206.
+2. **Customer spending is strongly right-skewed** — the median customer spends £658 while the mean is £1,406. The top customer alone generated £280,206. A small high-value segment drives a disproportionate share of total revenue.
 
-3. **The United Kingdom dominates total revenue at £7,285,024 (approximately 84% of all sales)**, but has the lowest median transaction value among the top 10 countries. The Netherlands and Australia place fewer but significantly larger orders, with median transaction values of approximately £90 and £65 respectively.
+3. **65.6% repeat purchase rate confirms strong customer loyalty** — 2,845 of 4,338 customers returned for a second order, with an average of 4.27 orders per customer. The 1,493 one-time customers represent an untapped retention opportunity.
 
-4. **A small set of products drives the majority of revenue** — PAPER CRAFT, LITTLE BIRDIE leads at approximately £165,000, followed by REGENCY CAKESTAND 3 TIER at £140,000. The top 3 products account for a substantial share of total product revenue.
+4. **Revenue is highly seasonal** — November 2011 peaked at £1,156,205, with Q4 accounting for over 40% of annual revenue. February and April are the weakest months at £446,085 and £468,374 respectively.
 
-5. **Purchase activity is concentrated in weekday business hours** — Tuesday to Thursday between 09:00 and 13:00 represent the highest-revenue windows, consistent with a B2B wholesale customer base operating on standard business schedules. Saturday is entirely inactive.
+5. **International markets are underleveraged** — the Netherlands and Australia show median transaction values of approximately £90 and £65 per transaction respectively, significantly above the UK median of under £20, indicating high-value wholesale buying behavior.
 
-*Additional insights to be added upon Week 4 advanced analysis completion.*
+6. **Thursday midday is the highest-value purchasing window** — Thursday generates £1,973,016 in total revenue, the highest of any day. Peak hour is 12:00 at £1,373,695. Saturday recorded zero transactions, confirming a B2B wholesale customer base.
+
+7. **Purchase frequency and total spend are moderately correlated (r = 0.55)** — more frequent buyers tend to spend more, but order size plays an independent role, suggesting loyalty programs should reward both frequency and order value.
+
+8. **A small set of products drives the majority of revenue** — PAPER CRAFT, LITTLE BIRDIE leads at approximately £165,000, followed by REGENCY CAKESTAND 3 TIER at £140,000. Non-product entries (POSTAGE, Manual) appear in the top 10 and must be excluded from product recommendations.
+
+---
+
+## Recommendations
+
+1. **Launch a high-value customer retention program** — identify top RFM-scoring customers and assign dedicated account management with volume-based pricing incentives.
+
+2. **Invest in international market development** — target the Netherlands and Australia with localized account managers and country-specific promotions to capitalize on their demonstrated high transaction values.
+
+3. **Implement an H1 revenue activation campaign** — introduce early-year loyalty discounts, new product launches in January/February, and spring bundles to reduce Q4 dependency and improve cash flow stability.
 
 ---
 
 ## Methodology
 
-Statistical methods from STA1020 including distribution analysis, IQR-based outlier detection, and probability estimation were applied throughout this analysis to ensure findings are statistically grounded.
+Statistical methods from STA1020 including distribution analysis, IQR-based outlier detection, percentile-based segmentation, correlation analysis, and probability estimation were applied throughout this analysis to ensure findings are statistically grounded.
 
-Python concepts from DSA1060 were also applied throught the project
+Programming concepts from DSA1060 — including data structures, control flow, and object-oriented principles — informed the code architecture and implementation approach used across all analytical sections.
 
 ---
+
 ## Student Information
 
 | Detail | Information |
@@ -126,4 +146,4 @@ This project was completed individually with AI assistance from Claude (Anthropi
 
 ---
 
-*Last updated: Week 3 — Exploratory Data Analysis complete*
+*Last updated: Week 4 — Advanced Analysis & Insights complete*
