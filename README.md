@@ -146,4 +146,4 @@ This project was completed individually with AI assistance from Claude (Anthropi
 
 ---
 
-*Last updated: Week 4 — Advanced Analysis & Insights complete*
+*Final submission: complete project — Gad Rubuye 677569, DSA1080A SS2026*
