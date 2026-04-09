@@ -54,7 +54,7 @@ This project presents an end-to-end data analysis of customer transaction behavi
 ## Project Structure
 ```
 DSA1080A-SS2026-GadRubuye-CustomerTransactionAnalysis/
-│
+├── proposal.pdf
 ├── data/
 │   ├── raw_dataset.csv
 │   └── cleaned_dataset.csv
